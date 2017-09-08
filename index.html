@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<BODY BACKGROUND = "gallery26.jpg">
+	<title>KALKULATOR</title>
+	<script type="text/javascript">
+	function tambah1(){
+		var b1 = document.getElementById('bil_1').value;
+	    var b2 = document.getElementById('bil_2').value;
+		
+		var b11 =parseFloat(b1);
+		var b22 =parseFloat(b2);
+
+		var hasil = b11 + b22;
+
+		document.getElementById("hasilnya").innerHTML = "hasil : "  +b11+ " + "  +b22+ " = " +hasil; 
+		document.getElementById("hasiltext").value = "hasil : " +b11+ " + "  +b22+ " = " +hasil;
+	}
+
+	function kurang1() {
+		var b1 = document.getElementById('bil_1').value;
+		var b2 = document.getElementById('bil_2').value;
+
+		var b11 = parseFloat(b1);
+		var b22 = parseFloat(b2);
+
+		var hasil = b11 - b22;
+		document.getElementById("hasilnya").innerHTML = "hasil : " +b11+ " - "  +b22+ " = " +hasil; 
+		document.getElementById("hasiltext").value = "hasil : " +b11+ " -"  +b22+ " = " +hasil;
+	}
+
+
+	function kali1() {
+		var b1 = document.getElementById('bil_1').value;
+		var b2 = document.getElementById('bil_2').value;
+
+		var b11 = parseFloat(b1);
+		var b22 = parseFloat(b2);
+
+		var hasil = b11 * b22;
+		document.getElementById("hasilnya").innerHTML = "hasil : " +b11+ " * "  +b22+ " = " +hasil; 
+		document.getElementById("hasiltext").value = "hasil : " +b11+ " x"  +b22+ " = " +hasil;
+	}
+
+
+	function bagi1() {
+		var b1 = document.getElementById('bil_1').value;
+		var b2 = document.getElementById('bil_2').value;
+
+		var b11 = parseFloat(b1);
+		var b22 = parseFloat(b2);
+
+		var hasil = b11 / b22;
+		document.getElementById("hasilnya").innerHTML = "hasil : " +b11+ " : "  +b22+ " = " +hasil; 
+		document.getElementById("hasiltext").value = "hasil : " +b11+ " / "  +b22+ " = " +hasil;
+	}
+
+</script>
+
+
+</head>
+
+<body>
+
+masukan angka 1 :<input type="text" id="bil_1"><br>
+masukan angka 2 :<input type="text" id="bil_2">
+<br>
+<input type="button" onClick="kali1()" value=" X ">
+<input type="button" onClick="bagi1()" value=" / ">
+<input type="button" onClick="tambah1()" value=" + ">
+<input type="button" onClick="kurang1()" value=" - ">
+<br>
+
+<a href="#" onClick="kali1()"><img src="kali.png" height="30"></a>
+<a href="#" onClick="tambah1()"><img src="tambah.png" height="30"></a>
+<a href="#" onClick="bagi1()"><img src="bagi.png" height="30"></a>
+<a href="#" onClick="kurang1()"><img src="kurang.png" height="30"></a>
+</br>
+<input id="hasiltext"> <br>
+
+<p id="hasilnya"> <br>
+
+</body>
+</html>
